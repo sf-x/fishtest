@@ -193,8 +193,6 @@ def find_arch_string():
         res='x86-64-bmi2'
      elif '-mavx2' in props['flags'] and 'x86-64-avx2' in targets:
         res='x86-64-avx2'
-     elif '-msse4.2' in props['flags'] and 'x86-64-sse42' in targets:
-        res='x86-64-sse42'
      elif '-mpopcnt' in props['flags'] and '-msse4.1' in props['flags'] and 'x86-64-modern' in targets:
         res='x86-64-modern'
      elif '-msse4.1' in props['flags'] and 'x86-64-sse41' in targets:
